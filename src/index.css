@@ -1,0 +1,368 @@
+:root {
+  --white: #ffffff;
+  --grey: #949494;
+  --blue-800: #242742;
+  --blue-700: #36384d;
+  --red: #ff6155;
+  --gradient: linear-gradient(to right, #ff6a3a, #ff527b);
+}
+
+.text-preset-1 {
+  font-family: "Roboto Bold", system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 1;
+  letter-spacing: 0px;
+}
+.text-preset-1-mobile {
+  font-family: "Roboto Bold", system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 0px;
+}
+.text-preset-2-bold {
+  font-family: "Roboto Bold", system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+.text-preset-2-regular {
+  font-family: "Roboto Regular", system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+.text-preset-3 {
+  font-family: "Roboto Bold", system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-page {
+  background: var(--blue-700);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*==========================
+        Desktop
+==========================*/
+.container {
+  display: flex;
+  width: min(904px, 100%);
+  height: 641px;
+  gap: 16px;
+  background: var(--white);
+  border-radius: 36px;
+  padding: 32px;
+}
+.content {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 64px;
+}
+.form-section {
+  width: 376px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+}
+.form-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
+}
+.form-title {
+  color: var(--blue-800);
+  width: 100%;
+}
+.form-description {
+  color: var(--blue-800);
+}
+
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.item {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+}
+.item-text {
+  color: var(--blue-800);
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.email-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.email-address {
+  color: var(--blue-800);
+}
+
+.email-address-invalid {
+  color: var(--red);
+}
+
+.email-input-field {
+  margin-top: -16px;
+  width: 100%;
+  height: 56px;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid var(--grey);
+  outline: none;
+}
+
+.email-input-field.input-error {
+  border: 1px solid var(--red);
+  background: #ffe8e6;
+  color: var(--red);
+}
+
+.button {
+  width: 100%;
+  height: 56px;
+  border-radius: 8px;
+  background: var(--blue-800);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+}
+
+.button:focus-visible,
+.button:hover {
+  background: var(--gradient);
+}
+.media {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.picture {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.sign-up-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+.success-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 504px;
+  height: 520px;
+  background: var(--white);
+  border-radius: 36px;
+}
+.success-content {
+  display: flex;
+  flex-direction: column;
+  width: 376px;
+  gap: 32px;
+}
+.success-image {
+  width: 64px;
+  height: 64px;
+  /* gap: 8px;
+  padding: 24px 16px; */
+}
+.success-description {
+  color: var(--blue-800);
+}
+.dismiss-button {
+  width: 100%;
+  height: 56px;
+  background: var(--blue-800);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+.dismiss-button:focus-visible,
+.dismiss-button:hover {
+  background: var(--gradient);
+}
+
+/*==============================
+        Tablet
+==============================*/
+@media (max-width: 768px) {
+  .container {
+    width: 608px;
+    height: 878px;
+    gap: 8px;
+    padding: 40px;
+  }
+  .content {
+    width: 528px;
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .media {
+    width: 528px;
+    height: 358px;
+    align-items: center;
+    justify-content: center;
+  }
+  .picture {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+  }
+  .sign-up-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transform: scale(1.02);
+  }
+  .form-section {
+    width: 100%;
+    height: auto;
+  }
+  .form-content {
+    width: 528px;
+    display: flex;
+    justify-content: start;
+    gap: 24px;
+  }
+  .button {
+    margin-top: -10px;
+  }
+}
+/*==============================
+        mobile
+==============================*/
+@media (max-width: 376px) {
+  .main-page {
+    display: block;
+    min-height: 100vh;
+    background: var(--white);
+  }
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  .content {
+    flex-direction: column-reverse;
+    width: 100%;
+    gap: 0px;
+    align-items: stretch;
+  }
+  .media {
+    width: 100%;
+    height: 284px;
+    align-items: stretch;
+    justify-content: stretch;
+  }
+  .picture {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0 0 16px 16px;
+  }
+  .sign-up-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  .form-section {
+    width: 100%;
+    height: auto;
+    padding: 40px 24px;
+  }
+  .form-content {
+    width: 100%;
+    gap: 24px;
+  }
+  .form-title {
+    font-family: "Roboto Bold", system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+  .item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .email-form {
+    margin-top: 10px;
+  }
+  .button {
+    margin-top: 2px;
+  }
+
+  .success-container {
+    width: 100%;
+    min-height: 876px;
+  }
+  .success-content {
+    width: 100%;
+    min-height: 623px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+  }
+  .success-title {
+    font-family: "Roboto Bold", system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 0px;
+  }
+  .dismiss-button {
+    margin-top: 230px;
+  }
+}
