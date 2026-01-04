@@ -106,6 +106,7 @@
 .form-title {
   color: var(--blue-800);
   width: 100%;
+  white-space: nowrap;
 }
 .form-description {
   color: var(--blue-800);
