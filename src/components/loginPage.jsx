@@ -88,6 +88,7 @@ const LoginPage = () => {
                 }`}
                 placeholder="email@company.com"
                 value={email}
+                required
                 onChange={(e) => setEmail(e.target.value)}
               />
               <button type="submit" className="button text-preset-2-bold">
